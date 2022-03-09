@@ -12,7 +12,7 @@ const Solodoctor=()=>{
   
  
     const fetchDataFromAPI = async () => {
-        let response = await fetch(`http://localhost:2233/appo/${id}`);
+        let response = await fetch(`https://appoloclone.herokuapp.com/appo/${id}`);
         response = await response.json();
         setData(response)
         setInput(response.slot)

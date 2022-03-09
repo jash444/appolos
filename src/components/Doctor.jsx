@@ -22,7 +22,7 @@ import { Solodoctor } from "./Solodoctor";
   
 
   const fetchDataFromAPI = async () => {
-    let response = await fetch(`http://localhost:2233/appo`);
+    let response = await fetch(`https://appoloclone.herokuapp.com/appo`);
     response = await response.json();
     console.log(response)
     //setComments(response);
